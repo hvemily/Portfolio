@@ -25,7 +25,7 @@ a:hover{
 
 h2.projects-title{
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 30rem;
     margin-bottom: 3rem;
 }
 
@@ -48,29 +48,30 @@ h2.projects-title{
     font-style: italic;  
     margin-left: 0px;
     margin-top: 65px;
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
+    margin: 0 auto;
 }
 
-.emily{
+.fullintro{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 0px;
-    width: 100%;
-    max-width: 30rem;
-    margin-top: 0px;
-    transform: scaleX(-1);
-}
-
-.intro{
-    margin-top: 7rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30vh;
 }
 
 .bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
 
+.down{
+    width: 5vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10vh;
 }
 
 .projects{
