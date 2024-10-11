@@ -10,13 +10,18 @@
 <body>
     <header>
         <nav id="navbar">
-            <div class="right">
+            <!-- Navigasjonslenker -->
+            <div id="nav-links">
                 <a href="index.html">HOME</a>
                 <a href="./html/about.html">ABOUT</a>
                 <a href="./html/contact.html">CONTACT</a>
             </div>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu">
+                &#9776; <!-- Unicode for hamburger-ikonet -->
+            </div>
         </nav>
-    </header>
+    </header>    
 
     <div class="fullintro">
         <h1 class="title">EMILY BRYNESTAD</h1>
@@ -68,6 +73,30 @@
 <footer>
         <button onclick="topFunction()" id="top-btn" title="Go to top">BACK TO TOP</button>
 </footer>
-<script src="./scroll.mjs" module="defer"></script>    
+<script defer>
+    function scrollToProjects() {
+        const projectTitle = document.getElementById('projects-title');
+        if (projectTitle) {
+            projectTitle.scrollIntoView({behavior: 'smooth'});
+        } else {
+            console.error('projects-title element not found');
+        }
+    }
+
+    function topFunction() {
+        const navbar = document.getElementById('navbar');
+        if (navbar) {
+            navbar.scrollIntoView({behavior: 'smooth'});
+        } else {
+            console.error('navbar element not found');
+        }
+    }
+
+    document.getElementById('hamburger-menu').addEventListener('click', function() {
+        console.log('Hamburger clicked');
+        const menu = document.getElementById('nav-links');
+        menu.classList.toggle('show-menu');
+    });
+</script>
 </body>
 </html>

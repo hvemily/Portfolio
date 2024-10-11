@@ -28,29 +28,42 @@ p{
     color: var(--text-color)
 }
 
-a{
+a {
     text-decoration: none;
     transition: 0.3s;
 }
 
-a:hover{
-    color: white;
+a:hover {
+    color: var(--text-color);
     transform: scale(1.1);
 }
 
-/*Desktop header*/
-.right{
+#navbar {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    gap: 10px;
-    margin-right: 40px;
-    margin-top: 40px;
-    font-size: 20px;
+    align-items: center;
+    padding: 1rem;
     font-style: italic;
-    font-weight: bold;
-    margin-top: 10px;
+    margin-right: 4rem;
 }
+
+/* Spesifikk styling for navbar-lenker */
+#navbar a {
+    margin-left: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover-effekt for navbar-lenker */
+#navbar a:hover {
+    color: var(--text-color);
+    transform: scale(1.1);
+}
+
+.hamburger {
+    display: none;
+    z-index: 10; /* Sørger for at den vises foran annet innhold */
+}
+
 
 .title{
     font-size: 7rem;
@@ -182,7 +195,7 @@ h3.title{
     flex-direction: row;
     gap: 2rem;
     font-weight: bold;
-    color: var(--color);
+    color: var(--primary-color); 
 }
 
 .links-one a{
@@ -241,22 +254,45 @@ h3.title{
 }
 
 .contact-img{
-    position: fixed; 
-    bottom: 0; 
-    width: 30rem; 
-    height: auto;
-    margin: 0;
+position: fixed; 
+bottom: 0; 
+width: 30rem; 
+height: auto;
+margin: 0;
 }
 
-
+/* Responsiv styling for små skjermer */
 @media (max-width: 768px) {
-    #navbar {
-        flex-direction: column;
-        align-items: center;
+    .hamburger {
+        display: block;
     }
 
-    #navbar a {
-        margin-left: 0;
-        margin-bottom: 1rem;
+    #nav-links {
+        display: none;
+        flex-direction: column; /* Viser menyen vertikalt */
+        text-align: center;
+        background-color: black; /* Bakgrunn for menyen */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .show-menu {
+        display: flex !important;
+        flex-direction: column;
+        z-index: 9;
+    }
+
+    #nav-links a {
+        padding: 1rem;
+        border-bottom: 1px solid white;
+    }
+
+    #nav-links a:hover {
+        color: var(--text-color);
+        transform: scale(1.1);
     }
 }
+
+
