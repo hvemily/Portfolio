@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     font-family: 'Inter', sans-serif;
 }
@@ -8,12 +12,15 @@ body{
     background-color: black;
 }
 
-p, h1, h2, h3{
+h1, h2, h3, a{
     color: rgb(255, 79, 26);
 }
 
+p{
+    color: white;
+}
+
 a{
-    color: rgb(255, 79, 26);
     text-decoration: none;
     transition: 0.3s;
 }
@@ -23,10 +30,9 @@ a:hover{
     transform: scale(1.1);
 }
 
-h2.projects-title{
+h2#projects-title{
     text-align: center;
     margin-top: 30rem;
-    margin-bottom: 3rem;
 }
 
 .right{
@@ -72,6 +78,18 @@ h2.projects-title{
     flex-direction: column;
     margin: 0 auto;
     margin-top: 10vh;
+    transition: transform 0.3s ease;
+}
+
+.down:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projects{
@@ -87,15 +105,48 @@ h3.title{
     margin-bottom: 1rem;
 }
 
+.school{
+    margin-top: 0px;
+    margin-bottom: 3rem;
+}
+
+.title-one{
+    color: rgb(255 , 143, 190);
+}
+
+.title-two{
+    color: rgb(250, 219, 20);
+}
+
+.title-three{
+    color: rgb(230 , 170, 206);
+}
+
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    border: solid 1px rgb(255, 79, 26);
     padding: 1rem;
     margin: 0 auto;
     margin-bottom: 3rem;
+}
+
+
+.project-img{
+    border: 1px solid var(--border-color);
+}
+
+.one {
+    --border-color: rgb(255 , 143, 190);
+}
+
+.two {
+    --border-color: rgb(250, 219, 20);
+}
+
+.three {
+    --border-color: rgb(230 , 170, 206);
 }
 
 .title{
@@ -112,11 +163,25 @@ h3.title{
     flex-direction: row;
     gap: 2rem;
     font-weight: bold;
+    color: var(--color);
+}
+
+.links-one a{
+    color: rgb(255 , 143, 190);
+}
+
+.links-two a{
+    color: rgb(250, 219, 20);
+}
+
+.links-three a{
+    color: rgb(230 , 170, 206);
 }
 
 .description{
     font-style: italic;
 }
+
 
 .about{
     display: flex;
