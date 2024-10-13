@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Emily Brynestad portfolio about page">
   <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="../images/logo-e.png">
   <title>Emily Brynestad | About</title>
 </head>
 <body>
@@ -15,78 +16,75 @@
         <a href="about.html">ABOUT</a> 
         <a href="contact.html">CONTACT</a>
       </div>
-      <div class="hamburger" id="hamburger-menu">
-        ☰
-      </div>
+      <div class="hamburger" id="hamburger-menu">☰</div>
     </nav>
   </header>
 
-    <div class="about">
-        <img src="../images/thumbnail_IMG_5040.png" alt="Emilys bitmoji jumping out waving her hands">
-        <div class="about-section">
-            <p class="hey">Hey you! <span class="wave">👋</span></p>
-            <p class="iAm">My name is</p>
-            <h1 class="about-name">Emily</h1>
-            <h2 class="about-lastname">Brynestad</h2>
-                <p class="about-text">I'm 29 years old and based in Oslo. I'm currently studying Frontend Development at Noroff, building on my previous experience with a bachelor's degree in Film and TV production from Westerdals, school of arts, communication and technology. While I currently work in retail, I'm excited to transition into the tech world and explore all the opportunities it holds. I'm curious, passionate about technology, and love diving into everything that involves it!
-                Check out my <a href="contact.html" class="contact-link">contact</a> page to get in touch!
-            </p>
-        </div>
-    </div>
-    
-
-    <h2 class="workwithme">Why Should You Work With Me?</h2>
-    <section class="qualifications">
-        <div class="bullet">
-            <h3>👉 Proficient in HTML, CSS, and JavaScript</h3>
-            <p>Building responsive, interactive websites with modern web technologies.</p>
-
-            <h3>👉 Responsive Design:</h3>
-            <p>Creating mobile-first, adaptive layouts that look great on all devices.</p>
-
-            <h3>👉 Cross-Browser Compatibility:</h3>
-            <p>Ensuring consistent performance across all major browsers.</p>
-
-            <h3>👉 Version Control with Git:</h3>
-            <p>Comfortable with Git for managing code and team collaboration.</p>
-
-            <h3>👉 API Integration:</h3>
-            <p>Experience in connecting web apps to APIs using RESTful services.</p>
-        </div>
-
-        <div class="skills">
-          <h2 class="skills-header">SKILLS</h2>
-              <div class="icons">
-                  <img src="../images/css3-alt-brands-solid.svg" alt="" class="css-icon">
-                  <img src="../images/html5-brands-solid.svg" alt="" class="html-icon">
-                  <img src="../images/js-brands-solid.svg" alt="" class="js-icon">
-                  <img src="../images/figma-brands-solid.svg" alt="" class="figma-icon">
-              </div>
+  <main>
+    <section class="about">
+      <img src="../images/thumbnail_IMG_5040.png" alt="Emily's bitmoji jumping out waving her hands">
+      <div class="about-section">
+        <p class="hey">Hey you! <span class="wave">👋</span></p>
+        <p class="iAm">My name is</p>
+        <h1 class="about-name">Emily</h1>
+        <h2 class="about-lastname">Brynestad</h2>
+        <p class="about-text">
+          I'm 29 years old and based in Oslo. I'm currently studying Frontend Development at Noroff, building on my previous experience with a bachelor's degree in Film and TV production from Westerdals, School of Arts, Communication and Technology. While I currently work in retail, I'm excited to transition into the tech world and explore all the opportunities it holds. I'm curious, passionate about technology, and love diving into everything that involves it!
+          Check out my <a href="contact.html" class="contact-link">contact</a> page to get in touch!
+        </p>
       </div>
     </section>
-    
-    <footer>
-      <button onclick="topFunction()" id="top-btn" title="Go to top">BACK TO TOP</button>
-    </footer>
 
-    <script defer>
-    
-  
-      function topFunction() {
-          const navbar = document.getElementById('navbar');
-          if (navbar) {
-              navbar.scrollIntoView({behavior: 'smooth'});
-          } else {
-              console.error('navbar element not found');
-          }
+    <h2 class="workwithme">Why Should You Work With Me?</h2>
+
+    <section class="qualifications">
+      <div class="bullet">
+        <h3>👉 Proficient in HTML, CSS, and JavaScript</h3>
+        <p>Building responsive, interactive websites with modern web technologies.</p>
+
+        <h3>👉 Responsive Design:</h3>
+        <p>Creating mobile-first, adaptive layouts that look great on all devices.</p>
+
+        <h3>👉 Cross-Browser Compatibility:</h3>
+        <p>Ensuring consistent performance across all major browsers.</p>
+
+        <h3>👉 Version Control with Git:</h3>
+        <p>Comfortable with Git for managing code and team collaboration.</p>
+
+        <h3>👉 API Integration:</h3>
+        <p>Experience in connecting web apps to APIs using RESTful services.</p>
+      </div>
+
+      <div class="skills">
+        <h2 class="skills-header">SKILLS</h2>
+        <div class="icons">
+          <img src="../images/css3-alt-brands-solid.svg" alt="CSS Icon" class="css-icon">
+          <img src="../images/html5-brands-solid.svg" alt="HTML Icon" class="html-icon">
+          <img src="../images/js-brands-solid.svg" alt="JavaScript Icon" class="js-icon">
+          <img src="../images/figma-brands-solid.svg" alt="Figma Icon" class="figma-icon">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <button onclick="topFunction()" id="top-btn" title="Go to top">BACK TO TOP</button>
+  </footer>
+
+  <script defer>
+    function topFunction() {
+      const navbar = document.getElementById('navbar');
+      if (navbar) {
+        navbar.scrollIntoView({behavior: 'smooth'});
+      } else {
+        console.error('navbar element not found');
       }
-  
-      
-      document.getElementById('hamburger-menu').addEventListener('click', function() {
-          const menu = document.getElementById('navlinks');
-          menu.classList.toggle('show-menu');
-      });
-  
-    </script>
+    }
+
+    document.getElementById('hamburger-menu').addEventListener('click', function() {
+      const menu = document.getElementById('navlinks');
+      menu.classList.toggle('show-menu');
+    });
+  </script>
 </body>
 </html>

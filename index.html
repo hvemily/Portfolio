@@ -5,83 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Emily Brynestad portfolio home page">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="../images/logo-e.png">
   <title>Emily Brynestad | Home</title>
 </head>
 <body>
   <header>
     <nav id="navbar">
       <div class="navlinks" id="navlinks">
-        <a href="index.html">HOME</a> <a href="./html/about.html">ABOUT</a> <a href="./html/contact.html">CONTACT</a>
+        <a href="index.html">HOME</a>
+        <a href="./html/about.html">ABOUT</a>
+        <a href="./html/contact.html">CONTACT</a>
       </div>
-      <div class="hamburger" id="hamburger-menu">
-        ☰
-      </div>
+      <div class="hamburger" id="hamburger-menu">☰</div>
     </nav>
   </header>
 
-  <div class="fullintro">
-    <h1 class="title">&lt;EMILY BRYNESTAD/&gt;</h1>
-    <p class="bio">Frontend student @ Noroff school of Technology and Digital Media.</p>
-  </div><img src="./images/chevron-down-solid.svg" alt="down symbol" class="down" onclick="scrollToProjects();">
-  
-  <section class="works">
-    <h2 id="projects-title">PROJECTS</h2>
-    <p class="school">These submissions are school projects, licensed through Noroff.</p>
-    <div id="projects">
-      <div class="card card-one">
-        <h3 class="title title-one">GameHub</h3><img src="./images/Skjermbilde%202024-10-11%20125905.png" class="project-img one" alt="screenshot of gamehub website">
-        <p class="description">A platform for buying and selling games. First assignment - Design, HTML and CSS and later on Javascript.</p>
-        <div class="links links-one">
-          <a href="https://hvemily.github.io/Javascript-CA/" class="visit">Visit live page</a> <a href="https://github.com/hvemily/Javascript-CA?classId=ef3a73db-bfdb-43a2-b6fb-132244cde312&amp;assignmentId=0d372bda-a3cd-46b1-bf09-7c42cc5b5d84&amp;submissionId=b585dac5-c76a-a531-4e96-709a5aa3e5b1">Visit GitHub repository</a>
-        </div>
+  <main>
+    <section class="intro">
+      <div class="fullintro">
+        <h1 class="title">&lt;EMILY BRYNESTAD/&gt;</h1>
+        <p class="bio">Frontend student @ Noroff school of Technology and Digital Media.</p>
       </div>
+      <img src="./images/chevron-down-solid.svg" alt="Down arrow" class="down" onclick="scrollToProjects();">
+    </section>
+
+    <section class="works">
+      <h2 id="projects-title">PROJECTS</h2>
+      <p class="school">These submissions are school projects, licensed through Noroff.</p>
       
-      <div class="card card-two">
-        <h3 class="title title-two">Oslo Science Museum</h3><img src="./images/Skjermbilde%202024-10-10%20194739.png" class="project-img two" alt="screenshot of gamehub website">
-        <p class="description">A science museum accessible to all. Semester Project 1 - HTML & CSS.</p>
-        <div class="links links-two">
-          <a href="https://hvemily.github.io/Semester-project/?classId=ef3a73db-bfdb-43a2-b6fb-132244cde312&amp;assignmentId=4868f55b-422b-4613-8166-707a4eb3ee1f&amp;submissionId=6a80f5df-0c72-ada5-f8de-2f62144cfa42" class="visit">Visit live page</a> <a href="https://github.com/hvemily/Semester-project?classId=ef3a73db-bfdb-43a2-b6fb-132244cde312&amp;assignmentId=4868f55b-422b-4613-8166-707a4eb3ee1f&amp;submissionId=6a80f5df-0c72-ada5-f8de-2f62144cfa42">Visit GitHub repository</a>
+      <div id="projects">
+        <div class="card card-one">
+          <h3 class="title title-one">GameHub</h3>
+          <img src="./images/Skjermbilde%202024-10-11%20125905.png" class="project-img one" alt="Screenshot of GameHub website">
+          <p class="description">
+            A platform for buying and selling games. First assignment - Design, HTML, CSS and later on Javascript.
+          </p>
+          <div class="links links-one">
+            <a href="https://hvemily.github.io/Javascript-CA/" class="visit">Visit live page</a>
+            <a href="https://github.com/hvemily/Javascript-CA">Visit GitHub repository</a>
+          </div>
+        </div>
+        
+        <div class="card card-two">
+          <h3 class="title title-two">Oslo Science Museum</h3>
+          <img src="./images/Skjermbilde%202024-10-10%20194739.png" class="project-img two" alt="Screenshot of Oslo Science Museum website">
+          <p class="description">
+            A science museum accessible to all. Semester Project 1 - HTML & CSS.
+          </p>
+          <div class="links links-two">
+            <a href="https://hvemily.github.io/Semester-project/">Visit live page</a>
+            <a href="https://github.com/hvemily/Semester-project">Visit GitHub repository</a>
+          </div>
+        </div>
+        
+        <div class="card card-three">
+          <h3 class="title title-three">hotView Labs</h3>
+          <img src="./images/Skjermbilde%202024-10-10%20194825.png" class="project-img three" alt="Screenshot of hotView Labs website">
+          <p class="description">
+            A blog for techies all over the world. Project Exam 1 - HTML, CSS & Javascript.
+          </p>
+          <div class="links links-three">
+            <a href="https://hvemily.github.io/Project-exam-v2/index.html">Visit live page</a>
+            <a href="https://github.com/hvemily/Project-exam-v2">Visit GitHub repository</a>
+          </div>
         </div>
       </div>
-      
-      <div class="card card-three">
-        <h3 class="title title-three">hotView Labs</h3><img src="./images/Skjermbilde%202024-10-10%20194825.png" class="project-img three" alt="screenshot of gamehub website">
-        <p class="description">A blog for techies over the world. Project Exam 1 - HTML, CSS & Javascript.</p>
-        <div class="links links-three">
-          <a href="https://hvemily.github.io/Project-exam-v2/index.html?classId=ef3a73db-bfdb-43a2-b6fb-132244cde312&amp;assignmentId=e76be328-2aaa-411c-9a8f-196cf3b1a56e&amp;submissionId=9a3f6b0c-1a01-5ced-cf9d-89200b052f9e" class="visit">Visit live page</a> <a href="https://github.com/hvemily/Project-exam-v2">Visit GitHub repository</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
   
   <footer>
     <button onclick="topFunction()" id="top-btn" title="Go to top">BACK TO TOP</button>
   </footer>
+
   <script defer>
     function scrollToProjects() {
-        const projectTitle = document.getElementById('projects-title');
-        if (projectTitle) {
-            projectTitle.scrollIntoView({behavior: 'smooth'});
-        } else {
-            console.error('projects-title element not found');
-        }
+      const projectTitle = document.getElementById('projects-title');
+      if (projectTitle) {
+        const offset = 50; // Adjust this value for the gap above the title
+        const titlePosition = projectTitle.getBoundingClientRect().top + window.pageYOffset - offset;
+        
+        window.scrollTo({
+          top: titlePosition,
+          behavior: 'smooth'
+        });
+      } else {
+        console.error('projects-title element not found');
+      }
     }
 
     function topFunction() {
-        const navbar = document.getElementById('navbar');
-        if (navbar) {
-            navbar.scrollIntoView({behavior: 'smooth'});
-        } else {
-            console.error('navbar element not found');
-        }
+      const navbar = document.getElementById('navbar');
+      if (navbar) {
+        navbar.scrollIntoView({behavior: 'smooth'});
+      } else {
+        console.error('navbar element not found');
+      }
     }
 
-    
     document.getElementById('hamburger-menu').addEventListener('click', function() {
-        const menu = document.getElementById('navlinks');
-        menu.classList.toggle('show-menu');
+      const menu = document.getElementById('navlinks');
+      menu.classList.toggle('show-menu');
     });
-
   </script>
 </body>
 </html>

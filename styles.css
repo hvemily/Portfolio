@@ -8,7 +8,6 @@
     --text-color: white;
 }
 
-/* general styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +15,7 @@
 }
 
 main{
-    flex-grow: 1;
+    margin: 0 auto;
 }
 
 body, html {
@@ -55,6 +54,8 @@ a:hover{
     transform: scale(1.1);
 }
 
+/*Home Page*/
+
 #navbar {
     display: flex;
     justify-content: flex-end;
@@ -66,10 +67,10 @@ a:hover{
 
 .navlinks {
     display: flex;
-    gap: 2rem; /* Legg til mellomrom mellom lenkene */
+    gap: 2rem; 
 }
 
-/* Styling for lenker i navbar */
+
 .navlinks a {
     text-decoration: none;
     color: var(--primary-color);
@@ -77,7 +78,7 @@ a:hover{
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover-effekt for lenker */
+
 .navlinks a:hover {
     color: var(--text-color);
     transform: scale(1.1);
@@ -217,15 +218,15 @@ h3.title {
     margin-top: 1rem;
 }
 
-.links-one a {
+.links-one a{
     color: rgb(255 , 143, 190);
 }
 
-.links-two a {
+.links-two a{
     color: rgb(250, 219, 20);
 }
 
-.links-three a {
+.links-three a{
     color: rgb(230 , 170, 206);
 }
 
@@ -262,35 +263,26 @@ h3.title {
     transition: 0.3s;
 }
 
-
-.contact-img {
-    position: fixed;
-    bottom: 0;
-    width: auto;
-    height: auto;
-    margin: 0;
-}
-
 /*About page*/
 .about {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; /* Endrer til center for bedre sentrering */
-    gap: clamp(1rem, 4vw, 4rem); /* Dynamisk gap mellom 1rem og 4rem */
-    width: clamp(80%, 90vw, 100%); /* Bredde mellom 80% og 100% av skjermen */
+    justify-content: center; 
+    gap: clamp(1rem, 4vw, 4rem); 
+    width: clamp(80%, 90vw, 100%); 
     margin: clamp(2rem, 5vh, 10vh) auto;
-    margin-top: 20vh; /* Topp og bunnmargin dynamisk, horisontal sentrering */
+    margin-top: 20vh; 
 }
 
 .about img {
-    max-width: clamp(200px, 25vw, 500px); /* Dynamisk justering av bildebredden */
+    max-width: clamp(200px, 25vw, 500px); 
     height: auto;
 }
 
 .about-text {
-    max-width: 600px; /* Setter en maks bredde for teksten */
-    width: 100%; /* Sørger for at teksten fyller tilgjengelig plass */
+    max-width: 600px; 
+    width: 100%; 
     text-align: left;
     line-height: 1.8rem;
 }
@@ -347,18 +339,21 @@ h3.title {
 .qualifications {
     display: flex;
     flex-direction: row;
-    justify-content:space-around; /* For å spre innholdet til sidene */
-    align-items: center; /* Sentrerer innholdet vertikalt */
+    justify-content:space-around; 
+    align-items: center; 
     width: 100%;
-    max-width: 1200px; /* Økt max bredde for å spre seg bedre utover skjermen */
-    margin: 0 auto; /* Midtstiller hele containeren */
-    color: #f9f9f9; /* Light text color */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    color: #f9f9f9; 
     margin-bottom: 10rem;
 }
+
+/*Contact page*/
 
 .contact-title{
     margin-top: 10vh;
     margin-bottom: 1vh;
+    text-align: center;
 }
 
 .contact-options{
@@ -397,14 +392,24 @@ h3.title {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6rem; /* Litt større gap mellom kontakt-elementene */
+    gap: 6rem; 
     margin-top: 1rem;
     padding: 1rem;
+}
+
+.contact-img {
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
 }
 
 
 
 @media (min-width: 768px) and (max-width: 1050px) {
+
+    /* /*Home page*/
     .title {
         font-size: 5rem;
         text-align: center;
@@ -412,9 +417,10 @@ h3.title {
     }
 
     .down {
-        margin-bottom: 20vh; /* Juster margin for å skyve knappen høyere */
+        margin-bottom: 20vh; 
     }
 
+    /*About page*/
 
     .about-section {
         margin: 0 auto;
@@ -427,20 +433,20 @@ h3.title {
         justify-content: center;
         text-align: center;
         margin: 0 auto;
-        align-items: center; /* Dette sørger for sentrering av alle elementer */
+        align-items: center; 
     }
 
     .about img {
         max-width: 350px;
-        height: auto; /* Sørger for at bildet holder proporsjonene sine */
+        height: auto; 
     }
 
     .about-text {
-        max-width: 80%; /* Gjør tekstområdet smalere */
+        max-width: 80%; 
         text-align: center;
         width: auto;
         margin: 0 auto;
-        margin-bottom: 1rem; /* Unngå fast bredde */
+        margin-bottom: 1rem; 
     }
 
     .about-lastname{
@@ -448,14 +454,14 @@ h3.title {
     }
 
     .bullet {
-        margin-left: 0; /* Fjerner negativ margin på kulepunktene */
+        margin-left: 0; 
         text-align: center;
     }
 
     .qualifications {
-        flex-direction: column; /* Kolonnevisning på nettbrett */
+        flex-direction: column; 
         align-items: center;
-        text-align: center;/* Sentraliserer innhold i kolonnen */
+        text-align: center;
     }
 
     .skills h2{
@@ -478,6 +484,7 @@ h3.title {
 
 
 @media (max-width: 768px) {
+    /*Home page*/
     .hamburger {
         display: block;
     }
@@ -549,6 +556,8 @@ h3.title {
         margin-right: 3vh;
     }
 
+    /*About page*/
+
     .about-section{
         align-items: center;
     }
@@ -560,7 +569,7 @@ h3.title {
     }
 
     .about img {
-        max-width: 250px; /* Enda mindre bilde på mobil */
+        max-width: 250px; 
     }
 
     .iAm{
@@ -570,13 +579,13 @@ h3.title {
 
     .about-name {
         font-size: 2.5rem;
-        margin-bottom: 0px; /* Justerer fontstørrelse på mobil */
+        margin-bottom: 0px; 
     }
 
     .about-lastname {
         font-size: 1.8rem; 
         margin-top: 0px;
-        margin-bottom: 1rem;/* Mindre font for etternavn */
+        margin-bottom: 1rem;
     }
 
     .about-section{
@@ -593,7 +602,7 @@ h3.title {
     }
 
     .about-text p {
-        font-size: 1rem; /* Justerer tekststørrelsen */
+        font-size: 1rem; 
         line-height: 1.6rem;
     }
 
@@ -606,11 +615,11 @@ h3.title {
     }
 
     .icons img {
-        width: 1.5rem; /* Gjør ikonene mindre på mobil */
+        width: 1.5rem; 
     }
 
     .qualifications {
-        flex-direction: column; /* Kolonnevisning */
+        flex-direction: column; 
         align-items: center;
         padding: 1rem;
         width: 20rem;
@@ -623,9 +632,10 @@ h3.title {
     }
 
     .icons img {
-        width: 1.5rem; /* Gjør ikonene mindre på mobil */
+        width: 1.5rem; 
     }
 
+    /*Contact page*/
     .contact-img{
         width: 250px;
     }
@@ -644,6 +654,7 @@ h3.title {
     }
 
 @media (max-width: 450px) {
+    /*Home page*/
     .title {
         font-size: 2rem;
     }
