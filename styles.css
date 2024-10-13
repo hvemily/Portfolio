@@ -18,6 +18,9 @@ html{
 
 body{
     background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Forhindrer horisontal scrolling */
 }
 
 h1, h2, h3, h4, a{
@@ -262,11 +265,11 @@ margin: 0;
 
 @media (max-width: 768px) {
     .hamburger {
-        display: block; /* Vis hamburgerikonet */
+        display: block;
     }
 
     .navlinks {
-        display: none; /* Skjul menyen som standard */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -274,17 +277,41 @@ margin: 0;
         background-color: black;
         width: 100%;
         text-align: center;
-        z-index: 1000; /* Sørg for at menyen vises foran annet innhold */
+        z-index: 1000; 
     }
 
     .navlinks a {
         padding: 1rem;
-        border-bottom: 1px solid white;
         width: 100%;
     }
 
-    /* Vis menyen når hamburgerikonet er klikket */
+
     .show-menu {
         display: flex;
+    }
+}
+
+.title{
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    
+    .title{
+        font-size: 2rem;
+    }
+
+    .fullintro{
+        margin-top: 20vh;
+    }
+
+    .bio{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 25vh;
+        line-height: 4vh;
     }
 }
