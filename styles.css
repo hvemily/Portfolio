@@ -61,9 +61,10 @@ p{
 
 .hamburger {
     display: none;
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
     color: var(--primary-color);
+    font-style: normal;
 }
 
 
@@ -89,6 +90,7 @@ p{
     flex-direction: column;
     align-items: center;
     margin: 0px;
+    margin-top: 2.5vh;
 }
 
 .down{
@@ -214,6 +216,7 @@ h3.title{
 
 .description{
     font-style: italic;
+    width: 500px;
 }
 
 #top-btn{
@@ -263,6 +266,15 @@ height: auto;
 margin: 0;
 }
 
+
+@media (min-width: 768px) and (max-width: 1048px) {
+    .title {
+        font-size: 5rem; /* Juster fontstørrelsen for denne skjermbredden */
+        text-align: center; /* Juster om nødvendig for å sentrere */
+        margin-top: 20px; /* Tilpass marginer for bedre layout */
+    }
+}
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -289,13 +301,48 @@ margin: 0;
     .show-menu {
         display: flex;
     }
-}
+
 
 .title{
     font-size: 3rem;
+    margin: 0 auto;
+
+    .bio{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 25vh;
+        line-height: 4vh;
+    }
+
+.school{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5vh;
 }
 
-@media (max-width: 768px) {
+.description{
+    text-align: center;
+    width: 300px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    gap: 1rem;
+}
+
+#navbar{
+    margin-right: 3vh;
+}
+
+}
+
+@media (max-width: 414px) {
     
     .title{
         font-size: 2rem;
@@ -314,4 +361,5 @@ margin: 0;
         width: 25vh;
         line-height: 4vh;
     }
+}
 }
