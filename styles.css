@@ -343,6 +343,11 @@ h3.title {
     line-height: 5vh;
 }
 
+.bullet-one, .bullet-two, .bullet-three, .bullet-four, .bullet-five{
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
 .bullet h3{
     font-size: 1.2rem;
     font-style: italic;
