@@ -306,6 +306,7 @@ margin: 0;
 .title{
     font-size: 3rem;
     margin: 0 auto;
+}
 
     .bio{
         display: flex;
@@ -338,9 +339,7 @@ margin: 0;
 
 #navbar{
     margin-right: 3vh;
-}
-
-}
+}}
 
 @media (max-width: 414px) {
     
@@ -361,5 +360,4 @@ margin: 0;
         width: 25vh;
         line-height: 4vh;
     }
-}
 }
