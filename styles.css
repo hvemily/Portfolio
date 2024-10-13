@@ -167,6 +167,8 @@ h3.title {
 
 .project-img {
     border: 1px solid var(--border-color);
+    width: 100%;
+    max-width: 1000px;
 }
 
 .one {
@@ -179,11 +181,6 @@ h3.title {
 
 .three {
     --border-color: rgb(230 , 170, 206);
-}
-
-.project-img {
-    width: 100%;
-    max-width: 1000px;
 }
 
 .links {
@@ -312,6 +309,10 @@ h3.title {
         margin-bottom: 5vh;
     }
 
+    .project-img {
+        margin-bottom: 5vh;
+    }
+
     .description {
         text-align: center;
         width: 300px;
@@ -348,4 +349,5 @@ h3.title {
         width: 35vh;
         line-height: 4vh;
     }
+
 }
