@@ -8,27 +8,27 @@
     --text-color: white;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-*{
+* {
     font-family: 'Inter', sans-serif;
 }
 
-body{
+body {
     background-color: black;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Forhindrer horisontal scrolling */
 }
 
-h1, h2, h3, h4, a{
+h1, h2, h3, h4, a {
     color: var(--primary-color);
 }
 
-p{
-    color: var(--text-color)
+p {
+    color: var(--text-color);
 }
 
 #navbar {
@@ -41,7 +41,7 @@ p{
 }
 
 .navlinks {
-    display: flex; /* Legg til flex-display for å justere lenkene pent */
+    display: flex;
     gap: 2rem; /* Legg til mellomrom mellom lenkene */
 }
 
@@ -50,7 +50,7 @@ p{
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
-    transition: transform 0.3s ease, color 0.3s ease; 
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 /* Hover-effekt for lenker */
@@ -67,33 +67,30 @@ p{
     font-style: normal;
 }
 
-
-.title{
+.title {
     font-size: 7rem;
     font-weight: 800;
-    font-style: italic;  
-    margin-left: 0px;
-    margin-top: 65px;
-    margin-bottom: 0px; 
+    font-style: italic;
     margin: 0 auto;
+    margin-top: 65px;
 }
 
-.fullintro{
+.fullintro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 30vh;
 }
 
-.bio{
+.bio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px;
+    margin: 0;
     margin-top: 2.5vh;
 }
 
-.down{
+.down {
     width: 5vh;
     display: flex;
     flex-direction: column;
@@ -105,30 +102,30 @@ p{
 
 @keyframes bounce {
     0%, 100% {
-        transform: translateY(0); /* Startposisjon (ingen bevegelse) */
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px); /* Flytt pilen opp 10px på halvveis */
+        transform: translateY(-10px);
     }
 }
 
-.down:hover{
+.down:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.works{
+.works {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-h2#projects-title{
+h2#projects-title {
     text-align: center;
     margin-top: 30rem;
 }
 
-.projects{
+.projects {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -136,29 +133,29 @@ h2#projects-title{
     gap: 2rem;
 }
 
-h3.title{
+h3.title {
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 
-.school{
-    margin-top: 0px;
+.school {
+    margin-top: 0;
     margin-bottom: 3rem;
 }
 
-.title-one{
+.title-one {
     color: rgb(255 , 143, 190);
 }
 
-.title-two{
+.title-two {
     color: rgb(250, 219, 20);
 }
 
-.title-three{
+.title-three {
     color: rgb(230 , 170, 206);
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,8 +165,7 @@ h3.title{
     margin-bottom: 3rem;
 }
 
-
-.project-img{
+.project-img {
     border: 1px solid var(--border-color);
 }
 
@@ -185,41 +181,37 @@ h3.title{
     --border-color: rgb(230 , 170, 206);
 }
 
-.title{
-    margin-top: 0px;
-}
-
-.project-img{
+.project-img {
     width: 100%;
     max-width: 1000px;
 }
 
-.links{
+.links {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     font-weight: bold;
-    color: var(--primary-color); 
+    color: var(--primary-color);
 }
 
-.links-one a{
+.links-one a {
     color: rgb(255 , 143, 190);
 }
 
-.links-two a{
+.links-two a {
     color: rgb(250, 219, 20);
 }
 
-.links-three a{
+.links-three a {
     color: rgb(230 , 170, 206);
 }
 
-.description{
+.description {
     font-style: italic;
     width: 500px;
 }
 
-#top-btn{
+#top-btn {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -233,14 +225,13 @@ h3.title{
     font-weight: bold;
 }
 
-#top-btn:hover{
+#top-btn:hover {
     transform: scale(1.1);
     color: white;
     cursor: pointer;
 }
 
-
-.about{
+.about {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -248,30 +239,29 @@ h3.title{
     width: 500px;
 }
 
-.about-text{
+.about-text {
     margin-top: 3rem;
     line-height: 2rem;
 }
 
-.contact-link{
+.contact-link {
     font-weight: bold;
     text-decoration: underline;
 }
 
-.contact-img{
-position: fixed; 
-bottom: 0; 
-width: 30rem; 
-height: auto;
-margin: 0;
+.contact-img {
+    position: fixed;
+    bottom: 0;
+    width: 30rem;
+    height: auto;
+    margin: 0;
 }
-
 
 @media (min-width: 768px) and (max-width: 1048px) {
     .title {
-        font-size: 5rem; /* Juster fontstørrelsen for denne skjermbredden */
-        text-align: center; /* Juster om nødvendig for å sentrere */
-        margin-top: 20px; /* Tilpass marginer for bedre layout */
+        font-size: 5rem;
+        text-align: center;
+        margin-top: 20px;
     }
 }
 
@@ -281,7 +271,7 @@ margin: 0;
     }
 
     .navlinks {
-        display: none; 
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -289,7 +279,7 @@ margin: 0;
         background-color: black;
         width: 100%;
         text-align: center;
-        z-index: 1000; 
+        z-index: 1000;
     }
 
     .navlinks a {
@@ -297,18 +287,16 @@ margin: 0;
         width: 100%;
     }
 
-
     .show-menu {
         display: flex;
     }
 
+    .title {
+        font-size: 3rem;
+        margin: 0 auto;
+    }
 
-.title{
-    font-size: 3rem;
-    margin: 0 auto;
-}
-
-    .bio{
+    .bio {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -318,40 +306,40 @@ margin: 0;
         line-height: 4vh;
     }
 
-.school{
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 5vh;
-}
+    .school {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
 
-.description{
-    text-align: center;
-    width: 300px;
-}
+    .description {
+        text-align: center;
+        width: 300px;
+    }
 
-.links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5vh;
-    gap: 1rem;
-}
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        gap: 1rem;
+    }
 
-#navbar{
-    margin-right: 3vh;
-}}
+    #navbar {
+        margin-right: 3vh;
+    }
+}
 
 @media (max-width: 414px) {
-    
-    .title{
+    .title {
         font-size: 2rem;
     }
 
-    .fullintro{
+    .fullintro {
         margin-top: 20vh;
     }
 
-    .bio{
+    .bio {
         display: flex;
         flex-direction: column;
         text-align: center;
