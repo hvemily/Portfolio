@@ -78,20 +78,10 @@
   </footer>
 
   <script defer>
-    function scrollToProjects() {
-      const projectTitle = document.getElementById('projects-title');
-      if (projectTitle) {
-        const offset = 50; // Adjust this value for the gap above the title
-        const titlePosition = projectTitle.getBoundingClientRect().top + window.pageYOffset - offset;
-        
-        window.scrollTo({
-          top: titlePosition,
-          behavior: 'smooth'
-        });
-      } else {
-        console.error('projects-title element not found');
-      }
-    }
+function scrollToProjects() {
+  document.getElementById('projects-title').scrollIntoView({behavior: 'smooth'});
+
+}
 
     function topFunction() {
       const navbar = document.getElementById('navbar');

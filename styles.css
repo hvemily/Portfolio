@@ -138,6 +138,19 @@ a:hover{
     cursor: pointer;
 }
 
+.about-name{
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+.about-lastname{
+    margin-bottom: 0.5rem;
+}
+
+.about-section{
+    line-height: 2rem;
+}
+
 .works {
     display: flex;
     flex-direction: column;
