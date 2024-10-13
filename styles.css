@@ -336,7 +336,7 @@ h3.title {
 }
 
 .html-icon:hover, .css-icon:hover, .js-icon:hover, .figma-icon:hover{
-    transform: scale(1.2); /* Skalerer ikonet til 120% */
+    transform: scale(1.2); 
     filter: brightness(0) invert(1);
 }
 
