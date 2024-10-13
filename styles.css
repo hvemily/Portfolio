@@ -183,15 +183,15 @@ h3.title {
 }
 
 .title-one {
-    color: rgb(255 , 143, 190);
+    color: var(--secondary-color-one)
 }
 
 .title-two {
-    color: rgb(250, 219, 20);
+    color: var(--secondary-color-two)
 }
 
 .title-three {
-    color: rgb(230 , 170, 206);
+    color: var(--secondary-color-three)
 }
 
 .card {
@@ -211,15 +211,15 @@ h3.title {
 }
 
 .one {
-    --border-color: rgb(255 , 143, 190);
+    --border-color: var(--secondary-color-one);
 }
 
 .two {
-    --border-color: rgb(250, 219, 20);
+    --border-color: var(--secondary-color-two);
 }
 
 .three {
-    --border-color: rgb(230 , 170, 206);
+    --border-color: var(--secondary-color-three);
 }
 
 .links {
@@ -232,15 +232,15 @@ h3.title {
 }
 
 .links-one a{
-    color: rgb(255 , 143, 190);
+    color: var(--secondary-color-one);
 }
 
 .links-two a{
-    color: rgb(250, 219, 20);
+    color: var(--secondary-color-two);
 }
 
 .links-three a{
-    color: rgb(230 , 170, 206);
+    color: var(--secondary-color-three);
 }
 
 .description {
@@ -258,7 +258,7 @@ h3.title {
     padding: 1rem;
     background: none;
     border: none;
-    color: rgb(255, 79, 26);
+    color: var(--primary-color);
     transition: 0.3s;
     font-style: italic;
     font-weight: bold;
@@ -357,7 +357,7 @@ h3.title {
     width: 100%;
     max-width: 1200px; 
     margin: 0 auto; 
-    color: #f9f9f9; 
+    color: var(--text-color);
     margin-bottom: 10rem;
 }
 
