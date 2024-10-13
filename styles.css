@@ -308,6 +308,7 @@ h3.title {
 
 .hey{
     font-style: italic;
+    color: var(--primary-color);
 }
 
 
