@@ -331,6 +331,12 @@ h3.title {
 
 .html-icon, .css-icon, .js-icon, .figma-icon{
     width: 2rem;
+    transition: 0.3s ease;
+}
+
+.html-icon:hover, .css-icon:hover, .js-icon:hover, .figma-icon:hover{
+    transform: scale(1.2); /* Skalerer ikonet til 120% */
+    filter: brightness(0) invert(1);
 }
 
 .workwithme{
@@ -381,9 +387,13 @@ h3.title {
 .linkedin, .github, .mail {
     width: 50px; 
     height: 50px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; 
     display: block;
     margin: 0 auto;
+}
+
+.contact-item a:hover img {
+    filter: brightness(0) invert(1); 
 }
 
 .contact-item {
@@ -393,16 +403,30 @@ h3.title {
     margin-top: 10vh;
 }
 
+.contact-item a {
+    color: var(--primary-color); 
+    text-align: center;
+    display: block;
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+
+.contact-item a:hover {
+    color: var(--text-color); 
+}
+
+
 .contact-item:hover {
     transform: translateY(-5px); 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
 }
 
 .contact-item p {
     margin-top: 0.75rem; 
     font-size: 1.2rem; 
-    color: var(--primary-color);
+    color: var(--primary-color); 
     font-weight: bold;
 }
 
@@ -415,6 +439,7 @@ h3.title {
     padding: 1rem;
 }
 
+/* Kontaktbilde */
 .contact-img {
     position: fixed;
     bottom: 0;
@@ -422,6 +447,7 @@ h3.title {
     height: auto;
     margin: 0;
 }
+
 
 
 
@@ -634,6 +660,12 @@ h3.title {
 
     .icons img {
         width: 1.5rem; 
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .icons img:hover {
+        transform: scale(1.2); 
+        filter: brightness(0) invert(1); 
     }
 
     .qualifications {
